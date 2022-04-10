@@ -1,23 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import NavBar from './components/NavBar.js'
+import About from './components/About.js'
+import RotatingPeople from './components/RotatingPeople';
+import StoreSuccess from './components/StoreSuccess';
+import ContactForm from './components/ContactForm';
+import BottomPage from './components/BottomPage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    <div className = "app">
+      <NavBar />
+      <About />
+      <div className = "addMoreFadedWhite"></div>
+    </div>
+    <RotatingPeople />
+    <StoreSuccess />
+    <ContactForm />
+    <BottomPage />
     </div>
   );
 }
